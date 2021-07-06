@@ -1,0 +1,34 @@
+{% load static %}
+<html>
+
+<head>
+  <title>CADASTRO</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+
+<body style="background-color: #ADD8E6;">
+  <div class="page-header" style="display:inline-flex; align-items: center;">
+    <h3 style="margin-left:10%;"><a href="/aplicacao">HOME</a></h3>
+    <h3 style="margin-left:10%;"><a href="/aplicacao/lista_pessoas">VOLTAR</a></h3>
+  </div>
+  <div class="content container">
+    <div class="row">
+      <div class="col-md-8">
+        <h3><b>DETALHE</b></h3>          
+        <p>----------------------------------------------------------------------------------------------------------------------------------</p>
+        <h5><b>Nome: </b>{{pessoa.nome}} </h5>
+        <h5><b>Sobrenome: </b> {{pessoa.sobrenome}}</h5>
+        <h5><b>Idade: </b>{{pessoa.idade}} </h5>
+        <p>----------------------------------------------------------------------------------------------------------------------------------</p>
+        <h5><b>Escolaridade: </b>{{pessoa.escolaridade}} </h5>
+        <h5><b>Departamento: </b> {{pessoa.depto_chefia}}</h5>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
